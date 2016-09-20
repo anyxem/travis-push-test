@@ -10,3 +10,4 @@ before_install:
 - git add .
 - git commit -m "test"
 - git push origin master
+script: node index.js
