@@ -6,7 +6,7 @@ before_install:
 - git config --global user.name "Sergey Chystiakov"
 - git config --global user.email "anyxem@gmail.com"
 - git config --global credential.helper "store --file=.git/credentials"
-- touch 1.txt
+- touch 2.txt
 - git add .
 - git commit -m "test"
 - git push origin master
