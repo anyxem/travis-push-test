@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- "6"
+before_install:
+- echo "https://${GITHUB_API_KEY}@github.com" > .git/credentials
+- git config --global user.name "Sergey Chystiakov"
+- git config --global user.email "anyxem@gmail.com"
+- git config --global credential.helper "store --file=.git/credentials"
+- touch 1.txt
+- git add .
+- git commit -m "test"
+- git push origin master
